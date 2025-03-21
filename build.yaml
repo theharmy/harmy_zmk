@@ -6,15 +6,15 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 ---
-board: [ "seeeduino_xiao_ble" ]
-shield: [ "licorice1_left", "licorice1_right" ]
+
 include:
    - board: seeeduino_xiao_ble
-     shield: licorice1_left
+     shield: licorice1_right 
    - board: seeeduino_xiao_ble
-     shield: licorice1_right
+     shield: licorice1_left
      
      snippet: studio-rpc-usb-uart
+     snippet: zmk-usb-logging
      cmake-args: -DCONFIG_ZMK_STUDIO=y
      artifact-name: licorice1_left_Studio
 #
