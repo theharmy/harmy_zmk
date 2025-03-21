@@ -6,7 +6,7 @@
 
 #include "licorice1-layouts.dtsi"
 
-{
+/ {
     chosen {
         zmk,physical-layout = &default_layout;
     };
