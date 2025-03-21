@@ -8,11 +8,11 @@
 board: [ "seeeduino_xiao_ble" ]
 shield: [ "licorice1_left", "licorice1_right" ]
 include:
-#   - board: bdn9_rev2
-#   - board: nice_nano_v2
-#     shield: reviung41
-#   - board: nice_nano_v2
-#     shield: corne_left
+   - board: seeeduino_xiao_ble
+     shield: licorice_left
+   - board: seeeduino_xiao_ble
+     shield: licorice_right
+     
      snippet: studio-rpc-usb-uart
      cmake-args: -DCONFIG_ZMK_STUDIO=y
      artifact-name: licorice_left_Studio
