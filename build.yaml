@@ -5,6 +5,7 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
+---
 board: [ "seeeduino_xiao_ble" ]
 shield: [ "licorice1_left", "licorice1_right" ]
 include:
@@ -17,4 +18,4 @@ include:
      cmake-args: -DCONFIG_ZMK_STUDIO=y
      artifact-name: licorice1_left_Studio
 #
----
+
