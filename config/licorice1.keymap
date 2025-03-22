@@ -92,16 +92,16 @@
 
         QWERTZ {
             bindings = <
-                &kp Q       &kp W       &kp E        &kp R        &kp T          &kp Z            &kp U        &kp I        &kp O       &kp MINUS
-                &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G          &kp H            &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI P
-&mt ESCAPE DEL  &kp Y       &kp X       &kp C        &kp V        &kp B          &kp N            &kp M        &kp COMMA    &kp DOT     &kp LEFT_ALT  &kp ENTER
-                                        &kp TAB      &kp LSHFT    &lt 5 SPACE    &lt 3 BACKSPACE  &lt 2 ENTER  &lt 4 LCTRL
+                &kp DE_Q       &kp W    &kp E        &kp R        &kp T             &kp DE_Z         &kp U        &kp I        &kp O       &kp DE_MINUS
+                &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G             &kp H            &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI P
+&mt ESCAPE DEL  &kp DE_Y       &kp X    &kp C        &kp V        &kp B             &kp N            &kp M        &kp DE_COMMA &kp DE_DOT  &kp LEFT_ALT  &kp ENTER
+                                        &kp TAB      &kp LSHFT    &lt 5 SPACE       &lt 3 BACKSPACE  &lt 2 ENTER  &lt 4 LCTRL
             >;
         };
 
         Colemak {
             bindings = <
-        &kp Q       &kp W       &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y       &kp BSPC
+        &kp Q       &kp W       &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y       &trans
         &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G     &kp M   &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
 &trans  &kp Z       &kp X       &kp C        &kp D        &kp V     &kp K   &kp H        &trans       &trans      &trans      &trans
                                 &trans       &trans       &trans    &trans  &trans       &trans
@@ -110,28 +110,28 @@
 
         Num {
             bindings = <
-        &kp SLASH      &kp N7  &kp N8   &kp N9  &kp MINUS       &kp RS(RA(RC(NUMBER_3)))  &trans          &trans     &trans        &trans
-        &kp LS(STAR)   &kp N4  &kp N5   &kp N6  &kp PLUS        &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
-&trans  &kp LS(PRCNT)  &kp N1  &kp N2   &kp N3  &kp LS(SEMI)    &trans                    &trans          &trans     &trans        &trans        &trans
-                               &kp DOT  &kp N0  &kp RET         &trans                    &trans          &trans
+        &kp DE_SLASH      &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_MINUS       &kp RS(RA(RC(NUMBER_3)))  &trans          &trans     &trans        &trans
+        &kp LS(DE_STAR)   &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS        &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
+&trans  &kp LS(DE_PRCNT)  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp LS(DE_SEMI)    &trans                    &trans          &trans     &trans        &trans        &trans
+                                     &kp DE_DOT  &kp DE_N0  &kp DE_RET         &trans                    &trans          &trans
             >;
         };
 
         Sym {
             bindings = <
-        &kp LBKT   &kp LS(FSLH)  &kp LS(LPAR)   &kp LS(RPAR)   &kp RBKT    &kp RS(RA(RC(NUMBER_4)))  &trans          &trans     &trans        &trans
-        &kp LBRC   &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(AMPS)   &kp RBRC    &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
-&trans  &kp CARET  &kp LS(EXCL)  &kp LS(DQT)    &kp LS(DLLR)   &kp BSLH    &trans                    &trans          &trans     &trans        &trans        &trans
-                                 &kp LS(COLON)  &kp LS(EQUAL)  &trans      &trans                    &trans          &trans
+        &kp DE_LBKT   &kp LS(DE_FSLH)  &kp LS(DE_LPAR)   &kp LS(DE_RPAR)   &kp DE_RBKT    &kp RS(RA(RC(NUMBER_4)))  &trans          &trans     &trans        &trans
+        &kp DE_LBRC   &kp LS(DE_DLLR)  &kp LS(DE_PRCNT)  &kp LS(DE_AMPS)   &kp DE_RBRC    &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
+&trans  &kp DE_CARET  &kp LS(DE_EXCL)  &kp LS(DE_DQT)    &kp LS(DE_DLLR)   &kp DE_BSLH    &trans                    &trans          &trans     &trans        &trans        &trans
+                                                        &kp LS(DE_COLON)  &kp LS(DE_EQUAL)  &trans                  &trans          &trans     &trans
             >;
         };
 
         Sym2 {
             bindings = <
-       &kp LS(FSLH)  &kp LS(LPAR)  &kp LS(STAR)  &kp LS(RPAR)  &kp BSLH       &kp RS(RA(RC(N5)))  &none      &none      &none     &none
-       &kp CARET     &kp LBKT      &kp TILDE     &kp RBKT      &kp LS(SQT)    &none               &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
-&none  &kp LT        &kp LBRC      &kp POUND     &kp RBRC      &kp LS(GT)     &trans              &none      &none      &none     &none     &none
-                                   &none         &none         &none          &none               &none      &none
+       &kp LS(DE_FSLH)  &kp LS(DE_LPAR)  &kp LS(DE_STAR)  &kp LS(DE_RPAR)  &kp DE_BSLH       &kp RS(RA(RC(N5)))  &none      &none      &none     &none
+       &kp DE_CARET     &kp DE_LBKT      &kp DE_TILDE     &kp DE_RBKT      &kp LS(DE_SQT)    &none               &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
+&none  &kp DE_LT        &kp DE_LBRC      &kp DE_POUND     &kp DE_RBRC      &kp LS(DE_GT)     &trans              &none      &none      &none     &none     &none
+                                                &none         &none         &none            &none               &none      &none
             >;
         };
 
