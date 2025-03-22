@@ -10,7 +10,9 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <250>;
+    bindings = <&kp>, <&kp>;
+
+    tapping-term-ms = <180>;
     quick-tap-ms = <200>;
     require-prior-idle-ms = <125>;
 };
@@ -109,8 +111,8 @@
         Num {
             bindings = <
         &kp DE_SLASH      &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_MINUS       &kp RS(RA(RC(NUMBER_3)))  &trans          &trans     &trans        &trans
-        &kp LS(DE_STAR)   &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS        &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
-&trans  &kp LS(DE_PRCNT)  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp LS(DE_SEMI)    &trans                    &trans          &trans     &trans        &trans        &trans
+        &kp LS(DE_STAR)   &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS        &trans   &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
+&trans  &kp LS(DE_PRCNT)  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp LS(DE_SEMI)    &trans   &trans          &trans     &trans        &trans        &trans
                                      &kp DE_DOT  &kp DE_N0  &kp DE_RET         &trans                    &trans          &trans
             >;
         };
