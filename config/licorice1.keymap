@@ -70,6 +70,16 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <17 18>;
         };
+
+        toColemak {
+            bindings = <&to 1>;
+            key-positions = <31 23 22>;
+        };
+
+        toQwertz {
+            bindings = <&to 0>;
+            key-positions = <31 9>;
+        };
     };
 
     keymap {
