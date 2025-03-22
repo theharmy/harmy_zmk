@@ -110,10 +110,10 @@
 
         Num {
             bindings = <
-        &kp DE_SLASH      &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_MINUS       &kp RS(RA(RC(NUMBER_3)))  &trans          &trans     &trans        &trans
-        &kp LS(DE_STAR)   &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS        &trans   &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
-&trans  &kp LS(DE_PRCNT)  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp LS(DE_SEMI)    &trans   &trans          &trans     &trans        &trans        &trans
-                                     &kp DE_DOT  &kp DE_N0  &kp DE_RET         &trans                    &trans          &trans
+        &kp DE_SLASH      &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_MINUS       &kp RS(RA(RC(NUMBER_3))) &trans          &trans     &trans        &trans
+        &kp LS(DE_STAR)   &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS        &trans                   &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
+&trans  &kp LS(DE_PRCNT)  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp LS(DE_SEMI)    &trans                   &trans          &trans     &trans        &trans        &trans
+                                     &kp DE_DOT  &kp DE_N0  &kp DE_RET         &trans                   &trans          &trans
             >;
         };
 
@@ -122,7 +122,7 @@
         &kp DE_LBKT   &kp LS(DE_FSLH)  &kp LS(DE_LPAR)   &kp LS(DE_RPAR)   &kp DE_RBKT    &kp RS(RA(RC(NUMBER_4)))  &trans          &trans     &trans        &trans
         &kp DE_LBRC   &kp LS(DE_DLLR)  &kp LS(DE_PRCNT)  &kp LS(DE_AMPS)   &kp DE_RBRC    &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
 &trans  &kp DE_CARET  &kp LS(DE_EXCL)  &kp LS(DE_DQT)    &kp LS(DE_DLLR)   &kp DE_BSLH    &trans                    &trans          &trans     &trans        &trans        &trans
-                                                        &kp LS(DE_COLON)  &kp LS(DE_EQUAL)  &trans                  &trans          &trans     &trans
+                                                        &kp LS(DE_COLON)  &kp LS(DE_EQUAL) &trans                  &trans          &trans     &trans
             >;
         };
 
