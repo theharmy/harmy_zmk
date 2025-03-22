@@ -80,6 +80,11 @@
             bindings = <&to 0>;
             key-positions = <31 9>;
         };
+
+        Studio {
+            bindings = <&studio_unlock>;
+            key-positions = <1 3>;
+        };
     };
 
     keymap {
