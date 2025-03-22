@@ -3,6 +3,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <locale/keys_de.h>
 
 / {
     // Define a default keymap here.
@@ -36,6 +37,14 @@
         };
 
         extra4 {
+            status = "reserved";
+        };
+
+        extra5 {
+            status = "reserved";
+        };
+
+        extra6 {
             status = "reserved";
         };
 
