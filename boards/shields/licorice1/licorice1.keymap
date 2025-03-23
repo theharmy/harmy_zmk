@@ -36,38 +36,38 @@
         };
 
         ausrufe {
-            bindings = <&kp EXCLAMATION>;
+            bindings = <&kp DE_EXCLAMATION>;
             key-positions = <0 1>;
             layers = <0 1>;
         };
 
         quotemarks {
-            bindings = <&kp DQT>;
+            bindings = <&kp DE_DQT>;
             key-positions = <1 2>;
         };
 
         slash {
-            bindings = <&kp FSLH>;
+            bindings = <&kp DE_FSLH>;
             key-positions = <2 3>;
         };
 
         question {
-            bindings = <&kp QMARK>;
+            bindings = <&kp DE_QMARK>;
             key-positions = <6 7>;
         };
 
         qt {
-            bindings = <&kp SQT>;
+            bindings = <&kp DE_SQT>;
             key-positions = <7 8>;
         };
 
         bracket {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp DE_LEFT_PARENTHESIS>;
             key-positions = <16 17>;
         };
 
         closebracket {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp DE_RIGHT_PARENTHESIS>;
             key-positions = <17 18>;
         };
 
@@ -79,11 +79,6 @@
         toQwertz {
             bindings = <&to 0>;
             key-positions = <31 9>;
-        };
-
-        Studio {
-            bindings = <&studio_unlock>;
-            key-positions = <1 3>;
         };
     };
 
