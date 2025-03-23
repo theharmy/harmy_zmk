@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 
-    tapping-term-ms = <180>;
-    quick-tap-ms = <200>;
+    tapping-term-ms = <250>;
+    quick-tap-ms = <0>;
     require-prior-idle-ms = <125>;
 };
 
@@ -79,6 +79,11 @@
         toQwertz {
             bindings = <&to 0>;
             key-positions = <31 9>;
+        };
+        
+        Map1 {
+            bindings = <&kp RA(RS(RC(NUMBER_8)))>;
+            key-positions = <18 19 4>;
         };
     };
 
