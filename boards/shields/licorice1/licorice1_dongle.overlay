@@ -59,6 +59,7 @@
         com-invdir;
         inversion-on;
         prechargep = <0x22>;
+        
     };
 };
 
