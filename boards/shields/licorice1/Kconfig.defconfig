@@ -1,4 +1,4 @@
-if SHIELD_LICORICE1_LEFT
+if SHIELD_MY_KEYBOARD_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "licorice"
@@ -6,11 +6,16 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif # SHIELD_LICORICE1_LEFT
-
-if SHIELD_LICORICE1_LEFT || SHIELD_LICORICE1_RIGHT
-
 config ZMK_SPLIT
     default y
 
-endif # SHIELD_LICORICE1_LEFT || SHIELD_LICORICE1_RIGHT
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config BT_MAX_CONN 
+    default 5
+
+config BT_MAX_PAIRED 
+    default 5
+
+endif
