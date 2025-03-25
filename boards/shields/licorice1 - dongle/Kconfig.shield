@@ -1,5 +1,9 @@
+config SHIELD_LICORICE1_DONGLE
+    def_bool $(shields_list_contains,licorice1_dongle)
+
 config SHIELD_LICORICE1_LEFT
     def_bool $(shields_list_contains,licorice1_left)
 
 config SHIELD_LICORICE1_RIGHT
     def_bool $(shields_list_contains,licorice1_right)
+
