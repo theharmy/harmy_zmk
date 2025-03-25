@@ -31,15 +31,18 @@
     };
 
 
-#import "licorice1-layouts.dtsi"
 
-&physical_layout0 {
-    transform = <&default_transform>;
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+    };
 };
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &physical_layout0;  // New item added
     };
 };
