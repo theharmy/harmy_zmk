@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "licorice1.dtsi" 
+#include "licorice1.dtsi" //also new 
+
 
 / {
     chosen {
@@ -43,6 +44,10 @@
     };
 };
 
+// this is the new addition officer 
+                                // only required if the dongle uses a 
+                                // different board than the peripherals
+/delete-node/ &default_kscan;
 
 &pro_micro_i2c {
     status = "okay";
