@@ -91,6 +91,7 @@
         compatible = "zmk,keymap";
 
         QWERTZ {
+            display-name = "QWE";
             bindings = <
                 &kp DE_Q       &kp W    &kp E        &kp R        &kp T             &kp DE_Z         &kp U        &kp I        &kp O       &kp DE_MINUS
                 &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G             &kp H            &mt RSHFT J  &mt RCTRL K  &mt LALT L  &mt RGUI P

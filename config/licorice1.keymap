@@ -123,6 +123,7 @@
         compatible = "zmk,keymap";
 
         QWE {
+            display-name = "QWE";
             bindings = <
                 &kp DE_Q     &kp W        &kp E         &kp R         &kp T             &kp DE_Z     &kp U            &kp I         &kp O        &kp DE_MINUS
                 &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G             &kp H        &hmr RSHFT J     &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
@@ -132,6 +133,7 @@
         };
 
         Col {
+            display-name = "COL";
             bindings = <
         &kp Q       &kp W       &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y       &trans
         &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G     &kp M   &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
@@ -141,6 +143,7 @@
         };
 
         Num {
+            display-name = "NUM";
             bindings = <
         &kp DE_SLASH      &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_MINUS       &kp RS(RA(RC(NUMBER_3)))  &trans          &trans     &trans        &trans
         &kp LS(DE_STAR)   &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS        &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
@@ -150,6 +153,7 @@
         };
 
         Sym {
+            display-name = "SYM";
             bindings = <
         &kp DE_LBKT   &kp LS(DE_FSLH)  &kp LS(DE_LPAR)   &kp LS(DE_RPAR)   &kp DE_RBKT    &kp RS(RA(RC(NUMBER_4)))  &trans          &trans     &trans        &trans
         &kp DE_LBRC   &kp LS(DE_DLLR)  &kp LS(DE_PRCNT)  &kp LS(DE_AMPS)   &kp DE_RBRC    &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
@@ -159,6 +163,7 @@
         };
 
         Mth {
+            display-name = "MTH";
             bindings = <
        &kp LS(DE_FSLH)  &kp LS(DE_LPAR)  &kp LS(DE_STAR)  &kp LS(DE_RPAR)  &kp DE_BSLH       &kp RS(RA(RC(N5)))  &none      &none      &none     &none
        &kp DE_CARET     &kp DE_LBKT      &kp DE_TILDE     &kp DE_RBKT      &kp LS(DE_SQT)    &none               &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
@@ -168,6 +173,7 @@
         };
 
         NAV {
+            display-name = "NAV";
             bindings = <
         &trans    &trans    &trans     &trans     &kp RS(RA(RC(NUMBER_6)))    &kp LC(Z)  &kp LC(C)       &kp LC(V)       &kp LC(X)     &kp LC(Y)
         &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                      &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
@@ -177,6 +183,7 @@
         };
 
         Mouse {
+            display-name = "MSE";
             bindings = <
        &trans    &trans    &trans     &trans     &kp RS(RA(RC(NUMBER_7)))    &kp LC(Z)  &kp LC(C)       &kp LC(V)       &kp LC(X)     &kp LC(Y)
        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                      &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
@@ -186,6 +193,7 @@
         };
 
         Sys {
+            display-name = "SYS";
             bindings = <
        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &kp RS(RA(RC(NUMBER_8)))  &kp F1  &kp F2   &kp F3   &kp F4
        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans                    &kp F5  &kp F6   &kp F7   &kp F8
