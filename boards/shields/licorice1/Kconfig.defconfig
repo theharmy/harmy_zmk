@@ -20,13 +20,6 @@ config BT_MAX_PAIRED
 
 endif
 
-choice ZMK_DISPLAY_WORK_QUEUE
-    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
-endchoice
-
-
-
-
 if ZMK_DISPLAY
 
 config I2C
@@ -35,8 +28,11 @@ config I2C
 config SSD1306
     default y
 
-endif
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
 
+endif
 
 if LVGL
 
