@@ -26,66 +26,24 @@
     combos {
         compatible = "zmk,combos";
 
-        ent+tab-mouse {
-            bindings = <&to 6>;
-            key-positions = <32 31>;
-            layers = <0 1>;
+        ae {
+            bindings = <&kp DE_A_UMLAUT>;
+            key-positions = <10 2>;
         };
 
-        to-sys {
-            bindings = <&to 7>;
-            key-positions = <20 31>;
+        ue {
+            bindings = <&kp DE_U_UMLAUT>;
+            key-positions = <10 6>;
         };
 
-        ausrufe {
-            bindings = <&kp DE_EXCLAMATION>;
-            key-positions = <0 1>;
-            layers = <0 1>;
+        oe {
+            bindings = <&kp DE_O_UMLAUT>;
+            key-positions = <10 8>;
         };
 
-        quotemarks {
-            bindings = <&kp DE_DQT>;
-            key-positions = <1 2>;
-        };
-
-        slash {
-            bindings = <&kp DE_FSLH>;
-            key-positions = <2 3>;
-        };
-
-        question {
-            bindings = <&kp DE_QMARK>;
-            key-positions = <6 7>;
-        };
-
-        qt {
-            bindings = <&kp DE_SQT>;
-            key-positions = <7 8>;
-        };
-
-        bracket {
-            bindings = <&kp DE_LEFT_PARENTHESIS>;
-            key-positions = <16 17>;
-        };
-
-        closebracket {
-            bindings = <&kp DE_RIGHT_PARENTHESIS>;
-            key-positions = <17 18>;
-        };
-
-        toColemak {
-            bindings = <&to 1>;
-            key-positions = <31 23 22>;
-        };
-
-        toQwertz {
-            bindings = <&to 0>;
-            key-positions = <31 9>;
-        };
-
-        Map1 {
-            bindings = <&kp RA(RS(RC(NUMBER_8)))>;
-            key-positions = <18 19 4>;
+        F-Layer {
+            bindings = <&mo 4>;
+            key-positions = <34 35>;
         };
     };
 
@@ -122,12 +80,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        QWERTZ {
+        QWE {
             bindings = <
-                &kp DE_Q     &kp W        &kp E         &kp R         &kp T             &kp DE_Z     &kp U            &kp I         &kp O        &kp DE_MINUS
-                &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G             &kp H        &hmr RSHFT J     &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
-&mt ESCAPE DEL  &kp DE_Y     &kp X        &kp C         &kp V         &kp B             &kp N        &kp M            &kp DE_COMMA  &kp DE_DOT   &kp LEFT_ALT  &kp ENTER
-                                          &kp TAB       &lt 5 SPACE   &kp LEFT_SHIFT    &lt 3 ENTER  &lt 2 BACKSPACE  &lt 4 LCTRL
+           &kp DE_Q     &kp W        &kp E         &kp R         &kp T        &kp DE_Z   &kp U           &kp I         &kp O        &kp DE_MINUS
+           &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H      &hmr RSHFT J    &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
+&kp LCTRL  &kp DE_Y     &kp X        &kp C         &kp V         &kp B        &kp N      &kp M           &kp DE_COMMA  &kp DE_DOT   &kp DE_MINUS  &kp ENTER
+                                     &kp LEFT_ALT  &lt 2 TAB     &kp SPACE    &kp ENTER  &kp LEFT_SHIFT  &mo 3
             >;
         };
 
@@ -140,39 +98,30 @@
             >;
         };
 
-        Num {
-            bindings = <
-        &kp DE_SLASH      &kp DE_N7  &kp DE_N8   &kp DE_N9  &kp DE_MINUS       &kp RS(RA(RC(NUMBER_3)))  &trans          &trans     &trans        &trans
-        &kp LS(DE_STAR)   &kp DE_N4  &kp DE_N5   &kp DE_N6  &kp DE_PLUS        &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
-&trans  &kp LS(DE_PRCNT)  &kp DE_N1  &kp DE_N2   &kp DE_N3  &kp LS(DE_SEMI)    &trans                    &trans          &trans     &trans        &trans        &trans
-                                     &kp DE_DOT  &kp DE_N0  &kp RET            &trans                    &trans          &trans
-            >;
-        };
-
         Sym {
             bindings = <
-        &kp DE_LBKT   &kp LS(DE_FSLH)  &kp LS(DE_LPAR)   &kp LS(DE_RPAR)   &kp DE_RBKT    &kp RS(RA(RC(NUMBER_4)))  &trans          &trans     &trans        &trans
-        &kp DE_LBRC   &kp LS(DE_DLLR)  &kp LS(DE_PRCNT)  &kp LS(DE_AMPS)   &kp DE_RBRC    &trans                    &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI
-&trans  &kp DE_CARET  &kp LS(DE_EXCL)  &kp LS(DE_DQT)    &kp LS(DE_DLLR)   &kp DE_BSLH    &trans                    &trans          &trans     &trans        &trans        &trans
-                                       &kp LS(DE_COLON)  &kp LS(DE_EQUAL)  &trans         &trans                    &trans          &trans
+        &kp LS(UNDER)  &kp LS(UNDER)  &kp LBKT  &kp RBKT   &kp CARET       &kp LS(EXCL)   &kp LT         &kp LS(GT)    &kp LS(EQUAL)  &kp LS(AMPS)
+        &kp BSLH       &kp LS(FSLH)   &kp LBRC  &kp RBRC   &kp LS(STAR)    &kp LS(QMARK)  &kp LS(LPAR)   &kp LS(RPAR)  &kp MINUS      &kp LS(COLON)
+&trans  &kp POUND      &kp LS(DLLR)   &kp PIPE  &kp TILDE  &kp GRAVE       &kp PLUS       &kp LS(PRCNT)  &kp LS(DQT)   &kp LS(SQT)    &kp LS(SEMI)   &kp RSHFT
+                                      &trans    &trans     &trans          &trans         &trans         &trans
             >;
         };
 
-        Sym2 {
+        Num {
             bindings = <
-       &kp LS(DE_FSLH)  &kp LS(DE_LPAR)  &kp LS(DE_STAR)  &kp LS(DE_RPAR)  &kp DE_BSLH       &kp RS(RA(RC(N5)))  &none      &none      &none     &none
-       &kp DE_CARET     &kp DE_LBKT      &kp DE_TILDE     &kp DE_RBKT      &kp LS(DE_SQT)    &none               &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
-&none  &kp DE_LT        &kp DE_LBRC      &kp DE_POUND     &kp DE_RBRC      &kp LS(DE_GT)     &trans              &none      &none      &none     &none     &none
-                                         &none            &none            &none             &none               &none      &none
+        &kp PG_UP     &kp BSPC  &kp UP    &kp DEL    &kp PG_DN    &kp MINUS      &kp N7  &kp N8  &kp N9  &kp PLUS
+        &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT  &kp END      &kp COMMA      &kp N4  &kp N5  &kp N6  &kp DOT
+&trans  &kp DE_CARET  &kp ESC   &kp TAB   &kp RET    &kp LC(Z)    &kp LS(COLON)  &kp N1  &kp N2  &kp N3  &kp LS(SEMI)  &kp RSHFT
+                                &trans    &trans     &trans       &trans         &trans  &trans
             >;
         };
 
-        NAV {
+        F-Layer {
             bindings = <
-        &trans    &trans    &trans     &trans     &kp RS(RA(RC(NUMBER_6)))    &kp LC(Z)  &kp LC(C)       &kp LC(V)       &kp LC(X)     &kp LC(Y)
-        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                      &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans                      &trans     &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
-                            &trans     &trans     &trans                      &kp BSPC   &kp ENTER       &kp LCTRL
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
