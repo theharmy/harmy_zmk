@@ -116,6 +116,7 @@
         };
 
         Sym {
+            display-name = "Sym"
             bindings = <
         &kp LS(UNDER)  &kp LS(UNDER)  &kp LBKT  &kp RBKT   &kp CARET       &kp LS(EXCL)   &kp LT         &kp LS(GT)    &kp LS(EQUAL)  &kp LS(AMPS)
         &kp BSLH       &kp LS(FSLH)   &kp LBRC  &kp RBRC   &kp LS(STAR)    &kp LS(QMARK)  &kp LS(LPAR)   &kp LS(RPAR)  &kp MINUS      &kp LS(COLON)
@@ -124,8 +125,8 @@
             >;
         };
 
-        F {
-            display-name = "F";
+        flayer {
+            display-name = "f";
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
         &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
