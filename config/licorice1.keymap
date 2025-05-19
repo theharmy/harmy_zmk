@@ -50,6 +50,34 @@
             bindings = <&kp ESCAPE>;
             key-positions = <20 31>;
         };
+
+        Show_l0 {
+            timeout-ms = <100>;
+            bindings = <&kp RA(RC(N0))>;
+            key-positions = <31 5>;
+            layers = <0>;
+        };
+
+        Show_l1 {
+            timeout-ms = <100>;
+            bindings = <&kp RA(RC(NUMBER_1))>;
+            key-positions = <31 5>;
+            layers = <2>
+        };
+
+        Show_l2 {
+            timeout-ms = <100>;
+            bindings = <&kp RA(RC(NUMBER_2))>;
+            key-positions = <31 5>;
+            layers = <3>
+        };
+
+        Show_l3 {
+            timeout-ms = <100>;
+            bindings = <&kp RA(RC(NUMBER_3))>;
+            key-positions = <31 5>;
+            layers = <4>
+        };
     };
 
     behaviors {
