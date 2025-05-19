@@ -41,7 +41,7 @@
             key-positions = <10 8>;
         };
 
-        F-Layer {
+        flayer {
             bindings = <&mo 4>;
             key-positions = <34 35>;
         };
