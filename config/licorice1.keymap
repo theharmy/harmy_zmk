@@ -116,7 +116,7 @@
         };
 
         Sym {
-            display-name = "Sym"
+            display-name = "Sym";
             bindings = <
         &kp LS(UNDER)  &kp LS(UNDER)  &kp LBKT  &kp RBKT   &kp CARET       &kp LS(EXCL)   &kp LT         &kp LS(GT)    &kp LS(EQUAL)  &kp LS(AMPS)
         &kp BSLH       &kp LS(FSLH)   &kp LBRC  &kp RBRC   &kp LS(STAR)    &kp LS(QMARK)  &kp LS(LPAR)   &kp LS(RPAR)  &kp MINUS      &kp LS(COLON)
