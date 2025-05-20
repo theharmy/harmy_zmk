@@ -105,10 +105,10 @@
 
         Sym {
             bindings = <
-        &kp DE_UNDERSCORE  &kp DE_UNDERSCORE  &kp LBKT  &kp RBKT   &kp CARET      &kp DE_EXCLAMATION  &kp LT                   &kp DE_GREATER_THAN       &kp DE_EQUAL         &kp DE_AMPERSAND
-        &kp BSLH           &kp DE_SLASH       &kp LBRC  &kp RBRC   &kp DE_STAR    &kp DE_QUESTION     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp MINUS            &kp DE_COLON
-&trans  &kp POUND          &kp LS(DLLR)       &kp PIPE  &kp TILDE  &kp GRAVE      &kp PLUS            &kp DE_PERCENT           &kp DE_DOUBLE_QUOTES      &kp DE_SINGLE_QUOTE  &kp DE_SEMICOLON  &kp RSHFT
-                                              &trans    &trans     &trans         &trans              &trans                   &trans
+        &kp DE_UNDERSCORE  &kp DE_UNDERSCORE  &kp DE_LEFT_BRACKET  &kp RIGHT_BRACKET   &kp DE_CARET    &kp DE_EXCLAMATION  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_EQUAL         &kp DE_AMPERSAND
+        &kp DE_BACKSLASH   &kp DE_SLASH       &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE  &kp DE_STAR     &kp DE_QUESTION     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp MINUS            &kp DE_COLON
+&trans  &kp DE_HASH        &kp DE_DOLLAR      &kp DE_PIPE          &kp DE_TILDE        &kp DE_GRAVE    &kp PLUS            &kp DE_PERCENT           &kp DE_DOUBLE_QUOTES      &kp DE_SINGLE_QUOTE  &kp DE_SEMICOLON  &kp RSHFT
+                                              &trans               &trans              &trans          &trans              &trans                   &trans
             >;
         };
 
