@@ -87,10 +87,10 @@
 
         QWE {
             bindings = <
-           &kp DE_Q     &kp W        &kp E         &kp R         &kp T        &kp DE_Z   &kp U           &kp I         &kp O        &kp DE_MINUS
-           &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H      &hmr RSHFT J    &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
-&kp LCTRL  &kp DE_Y     &kp X        &kp C         &kp V         &kp B        &kp N      &kp M           &kp DE_COMMA  &kp DE_DOT   &kp DE_MINUS  &kp RCTRL
-                                     &kp LEFT_ALT  &lt 2 TAB     &kp SPACE    &kp ENTER  &kp LEFT_SHIFT  &mo 3
+           &kp DE_Q     &kp W        &kp E         &kp R         &kp T        &kp DE_Z       &kp U         &kp I         &kp O        &kp DE_MINUS
+           &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H          &hmr RSHFT J  &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
+&kp LCTRL  &kp DE_Y     &kp X        &kp C         &kp V         &kp B        &kp N          &kp M         &kp DE_COMMA  &kp DE_DOT   &kp DE_MINUS  &kp RCTRL
+                                     &kp LEFT_ALT  &lt 2 TAB     &kp SPACE    &kp BACKSPACE  &kp ENTER     &mo 3
             >;
         };
 
@@ -105,19 +105,19 @@
 
         Sym {
             bindings = <
-        &kp LS(UNDER)  &kp LS(UNDER)  &kp LBKT  &kp RBKT   &kp CARET       &kp LS(EXCL)   &kp LT         &kp LS(GT)    &kp LS(EQUAL)  &kp LS(AMPS)
-        &kp BSLH       &kp LS(FSLH)   &kp LBRC  &kp RBRC   &kp LS(STAR)    &kp LS(QMARK)  &kp LS(LPAR)   &kp LS(RPAR)  &kp MINUS      &kp LS(COLON)
-&trans  &kp POUND      &kp LS(DLLR)   &kp PIPE  &kp TILDE  &kp GRAVE       &kp PLUS       &kp LS(PRCNT)  &kp LS(DQT)   &kp LS(SQT)    &kp LS(SEMI)   &kp RSHFT
-                                      &trans    &trans     &trans          &trans         &trans         &trans
+        &kp DE_UNDERSCORE  &kp DE_UNDERSCORE  &kp LBKT  &kp RBKT   &kp CARET      &kp DE_EXCLAMATION  &kp LT                   &kp DE_GREATER_THAN       &kp DE_EQUAL         &kp DE_AMPERSAND
+        &kp BSLH           &kp DE_SLASH       &kp LBRC  &kp RBRC   &kp DE_STAR    &kp DE_QUESTION     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp MINUS            &kp DE_COLON
+&trans  &kp POUND          &kp LS(DLLR)       &kp PIPE  &kp TILDE  &kp GRAVE      &kp PLUS            &kp DE_PERCENT           &kp DE_DOUBLE_QUOTES      &kp DE_SINGLE_QUOTE  &kp DE_SEMICOLON  &kp RSHFT
+                                              &trans    &trans     &trans         &trans              &trans                   &trans
             >;
         };
 
         Num {
             bindings = <
-        &kp PG_UP     &kp BSPC  &kp UP    &kp DEL    &kp PG_DN    &kp MINUS      &kp N7  &kp N8  &kp N9  &kp PLUS
-        &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT  &kp END      &kp COMMA      &kp N4  &kp N5  &kp N6  &kp DOT
-&trans  &kp DE_CARET  &kp ESC   &kp TAB   &kp RET    &kp LC(Z)    &kp LS(COLON)  &kp N1  &kp N2  &kp N3  &kp LS(SEMI)  &kp RSHFT
-                                &trans    &trans     &trans       &trans         &trans  &trans
+        &kp PG_UP     &kp BSPC  &kp UP    &kp DEL    &kp PG_DN    &kp MINUS     &kp N7  &kp N8  &kp N9  &kp PLUS
+        &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT  &kp END      &kp COMMA     &kp N4  &kp N5  &kp N6  &kp DOT
+&trans  &kp DE_CARET  &kp ESC   &kp TAB   &kp RET    &kp LC(Z)    &kp DE_COLON  &kp N1  &kp N2  &kp N3  &kp DE_SEMICOLON  &kp RSHFT
+                                &trans    &trans     &trans       &trans        &trans  &trans
             >;
         };
 
