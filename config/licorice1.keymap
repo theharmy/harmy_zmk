@@ -146,10 +146,10 @@
         Sym {
             display-name = "Sym";
             bindings = <
-        &kp LS(UNDER)  &kp LS(UNDER)  &kp LBKT  &kp RBKT   &kp CARET       &kp LS(EXCL)   &kp LT         &kp LS(GT)    &kp LS(EQUAL)  &kp LS(AMPS)
-        &kp BSLH       &kp LS(FSLH)   &kp LBRC  &kp RBRC   &kp LS(STAR)    &kp LS(QMARK)  &kp LS(LPAR)   &kp LS(RPAR)  &kp MINUS      &kp LS(COLON)
-&trans  &kp POUND      &kp LS(DLLR)   &kp PIPE  &kp TILDE  &kp GRAVE       &kp PLUS       &kp LS(PRCNT)  &kp LS(DQT)   &kp LS(SQT)    &kp LS(SEMI)   &kp RSHFT
-                                      &trans    &trans     &trans          &trans         &trans         &trans
+        &kp DE_UNDERSCORE  &kp DE_UNDERSCORE  &kp DE_LEFT_BRACKET  &kp RIGHT_BRACKET   &kp DE_CARET    &kp DE_EXCLAMATION  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_EQUAL         &kp DE_AMPERSAND
+        &kp DE_BACKSLASH   &kp DE_SLASH       &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE  &kp DE_STAR     &kp DE_QUESTION     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp MINUS            &kp DE_COLON
+&trans  &kp DE_HASH        &kp DE_DOLLAR      &kp DE_PIPE          &kp DE_TILDE        &kp DE_GRAVE    &kp PLUS            &kp DE_PERCENT           &kp DE_DOUBLE_QUOTES      &kp DE_SINGLE_QUOTE  &kp DE_SEMICOLON  &kp RSHFT
+                                              &trans               &trans              &trans          &trans              &trans                   &trans
             >;
         };
 
