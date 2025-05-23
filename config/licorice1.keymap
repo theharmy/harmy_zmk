@@ -33,15 +33,15 @@
 
         ue {
             bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <10 6>;
+            key-positions = <6 2>;
         };
 
         oe {
             bindings = <&kp DE_O_UMLAUT>;
-            key-positions = <10 8>;
+            key-positions = <8 2>;
         };
 
-        flayer {
+        F-Layer {
             bindings = <&mo 4>;
             key-positions = <34 35>;
         };
@@ -114,6 +114,13 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 32 33 34 20>;
             hold-trigger-on-release;
         };
+
+            back_del: back_del {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACK_DEL";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+        };    
     };
 
     keymap {
@@ -122,10 +129,10 @@
         QWE {
             display-name = "QWE";
             bindings = <
-           &kp DE_Q     &kp W        &kp E         &kp R         &kp T                       &kp DE_Z            &kp U         &kp I         &kp O        &kp DE_HASH
-           &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                       &kp H               &hmr RSHFT J  &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
-&kp LCTRL  &kp DE_Y     &kp X        &kp C         &kp V         &kp B                       &kp N               &kp M         &kp DE_COMMA  &kp DE_DOT   &kp DE_MINUS  &kp RCTRL
-                                     &kp LEFT_ALT  &lt 3 SPACE   &mt LEFT_SHIFT BACKSPACE    &mt LEFT_SHIFT DEL  &lt 2 ENTER   &kp TAB
+           &kp DE_Q     &kp W        &kp E         &kp R         &kp T                 &kp DE_Z   &kp U         &kp I         &kp O        &kp DE_HASH
+           &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                 &kp H      &hmr RSHFT J  &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
+&kp LCTRL  &kp DE_Y     &kp X        &kp C         &kp V         &kp B                 &kp N      &kp M         &kp DE_COMMA  &kp DE_DOT   &kp DE_MINUS  &kp RCTRL
+                                     &kp LEFT_ALT  &lt 3 SPACE   &mt LEFT_SHIFT TAB    &back_del  &lt 2 ENTER   &kp TAB
             >;
         };
 
