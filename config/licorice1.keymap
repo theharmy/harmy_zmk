@@ -51,6 +51,12 @@
             key-positions = <20 31>;
         };
 
+        boot {
+            bindings = <&bootloader>;
+            key-positions = <4 5>;
+            layers = <4>;
+        };
+
         Show_l0 {
             timeout-ms = <100>;
             bindings = <&kp RA(RC(N0))>;
@@ -119,7 +125,7 @@
            &kp DE_Q     &kp W        &kp E         &kp R              &kp T             &kp DE_Z       &kp U         &kp I         &kp O        &kp DE_MINUS
            &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F       &kp G             &kp H          &hmr RSHFT J  &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
 &kp LCTRL  &kp DE_Y     &kp X        &kp C         &kp V              &kp B             &kp N          &kp M         &kp DE_COMMA  &kp DE_DOT   &kp DE_MINUS  &kp DE_HASH
-                                     &kp LEFT_ALT  &lt 2 DE_SPACE     &kp LEFT_SHIFT    &kp BACKSPACE  &lt 3 ENTER   &kp RGUI
+                                     &kp LEFT_ALT  &lt 2 DE_SPACE     &kp LEFT_SHIFT    &kp BACKSPACE  &lt 3 ENTER   &kp TAB
             >;
         };
 
