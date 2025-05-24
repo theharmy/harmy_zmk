@@ -147,7 +147,7 @@
         };
 
         NN {
-            display-name = "NUM";
+            display-name = "Nav";
             bindings = <
         &kp PG_UP     &kp BSPC  &kp UP    &kp DEL    &kp PG_DN    &kp DE_MINUS  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS
         &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT  &kp END      &kp DE_COMMA  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PERIOD
