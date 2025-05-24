@@ -146,8 +146,8 @@
             >;
         };
 
-        NN {
-            display-name = "Nav";
+        NAV {
+            display-name = "NAV";
             bindings = <
         &kp PG_UP     &kp BSPC  &kp UP    &kp DEL    &kp PG_DN    &kp DE_MINUS  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS
         &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT  &kp END      &kp DE_COMMA  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PERIOD
@@ -156,8 +156,8 @@
             >;
         };
 
-        Sym {
-            display-name = "Sym";
+        SYM {
+            display-name = "SYM";
             bindings = <
         &kp DE_UNDERSCORE  &kp DE_UNDERSCORE  &kp DE_LEFT_BRACKET  &kp RIGHT_BRACKET   &kp DE_CARET    &kp DE_EXCLAMATION  &kp DE_LESS_THAN         &kp DE_GREATER_THAN       &kp DE_EQUAL         &kp DE_AMPERSAND
         &kp DE_BACKSLASH   &kp DE_SLASH       &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE  &kp DE_STAR     &kp DE_QUESTION     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_MINUS         &kp DE_COLON
