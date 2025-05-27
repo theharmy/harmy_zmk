@@ -13,7 +13,7 @@
     bindings = <&kp>, <&kp>;
 
     tapping-term-ms = <250>;
-    quick-tap-ms = <0>;
+    quick-tap-ms = <150>;
     require-prior-idle-ms = <125>;
 };
 
