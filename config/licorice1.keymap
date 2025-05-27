@@ -110,6 +110,8 @@
 &mt LCTRL ESCAPE  &kp DE_Y     &kp X        &kp C                &kp V         &kp B                      &kp N            &kp M        &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &kp LEFT_SHIFT
                                             &mt LEFT_ALT ESCAPE  &kp TAB       &mt LEFT_SHIFT DE_SPACE    &lt 2 BACKSPACE  &lt 1 ENTER  &kp DE_COLON
             >;
+
+            label = "QWE";
         };
 
         Sym {
@@ -119,6 +121,8 @@
 &trans  &kp DE_PLUS   &kp DE_PIPE          &kp DE_AT          &kp DE_SLASH             &kp DE_PERCENT    &kp DE_COLON  &kp DE_BACKSLASH          &kp DE_AMPS         &kp QMARK             &kp DE_EXCL   &trans
                                            &trans             &trans                   &trans            &trans        &trans                    &trans
             >;
+
+            label = "SYM";
         };
 
         NAV {
@@ -128,15 +132,19 @@
 &trans  &trans                &trans              &trans                &trans               &trans                 &trans                &trans                &trans         &trans               &trans                   &trans
                                                   &trans                &trans               &trans                 &trans                &trans                &trans
             >;
+
+            label = "NAV";
         };
 
-        F-Layer {
+        flayer {
             bindings = <
         &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6   &kp F7  &kp F8  &kp F9  &kp F10
         &trans  &trans  &trans  &trans  &kp F11    &kp F12  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans  &trans   &trans
                         &trans  &trans  &trans     &trans   &trans  &trans
             >;
+
+            label = "f";
         };
 
         Mouse {
