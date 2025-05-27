@@ -105,10 +105,10 @@
 
         QWE {
             bindings = <
-                  &kp DE_Q     &kp W        &kp E         &kp R         &kp T                      &kp DE_Z         &kp U        &kp I         &kp O       &kp DE_HASH
-                  &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                      &kp H            &kp DE_J     &kp DE_K      &kp DE_L    &kp DE_P
-&mt LCTRL ESCAPE  &kp DE_Y     &kp X        &kp C         &kp V         &kp B                      &kp N            &kp M        &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &mt LEFT_SHIFT DE_DOUBLE_QUOTES
-                                            &kp LEFT_ALT  &kp TAB       &mt LEFT_SHIFT DE_SPACE    &lt 2 BACKSPACE  &lt 1 ENTER  &kp DELETE
+                  &kp DE_Q     &kp W        &kp E                &kp R         &kp T                      &kp DE_Z         &kp U        &kp I         &kp O       &kp DE_HASH
+                  &hml LGUI A  &hml LALT S  &hml LCTRL D         &hml LSHFT F  &kp G                      &kp H            &kp DE_J     &kp DE_K      &kp DE_L    &kp DE_P
+&mt LCTRL ESCAPE  &kp DE_Y     &kp X        &kp C                &kp V         &kp B                      &kp N            &kp M        &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &mt LEFT_SHIFT DE_DOUBLE_QUOTES
+                                            &mt LEFT_ALT ESCAPE  &kp TAB       &mt LEFT_SHIFT DE_SPACE    &lt 2 BACKSPACE  &lt 1 ENTER  &kp DE_COLON
             >;
         };
 
@@ -123,10 +123,10 @@
 
         NAV {
             bindings = <
-        &kp N1                  &kp N2              &kp N3                &kp N4               &kp N5                 &kp N6                &kp N7                &kp N8         &kp N9               &kp N0
-        &hml LEFT_GUI DE_SPACE  &hml LEFT_ALT HOME  &hml LCTRL PAGE_DOWN  &hml LSHIFT PAGE_UP  &hml LEFT_SHIFT END    &hmr LEFT_SHIFT LEFT  &hmr LEFT_SHIFT DOWN  &hmr LCTRL UP  &hmr LEFT_ALT RIGHT  &hmr LEFT_GUI BACKSPACE
-&trans  &kp SPACE               &kp SPACE           &kp SPACE             &kp SPACE            &kp SPACE              &kp SPACE             &kp SPACE             &kp SPACE      &kp SPACE            &kp SPACE                &kp SPACE
-                                                    &trans                &trans               &trans                 &trans                &trans                &trans
+        &kp N1                &kp N2              &kp N3                &kp N4               &kp N5                 &kp N6                &kp N7                &kp N8         &kp N9               &kp N0
+        &hml LEFT_GUI DELETE  &hml LEFT_ALT HOME  &hml LCTRL PAGE_DOWN  &hml LSHIFT PAGE_UP  &hml LEFT_SHIFT END    &hmr LEFT_SHIFT LEFT  &hmr LEFT_SHIFT DOWN  &hmr LCTRL UP  &hmr LEFT_ALT RIGHT  &hmr LEFT_GUI BACKSPACE
+&trans  &kp SPACE             &kp SPACE           &kp SPACE             &kp SPACE            &kp SPACE              &kp SPACE             &kp SPACE             &kp SPACE      &kp SPACE            &kp SPACE                &kp SPACE
+                                                  &trans                &trans               &trans                 &trans                &trans                &trans
             >;
         };
 
