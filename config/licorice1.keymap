@@ -123,7 +123,7 @@
 
         NAV {
             bindings = <
-        &kp N1                &kp N2              &kp N3                &kp N4               &kp N5                 &kp N6                &kp N7                &kp N8         &kp N9               &kp N0
+        &kp DE_N1             &kp DE_N2           &kp DE_N3             &kp DE_N4            &kp DE_N5              &kp DE_N6             &kp DE_N7             &kp DE_N8      &kp DE_N9            &kp DE_N0
         &hml LEFT_GUI DELETE  &hml LEFT_ALT HOME  &hml LCTRL PAGE_DOWN  &hml LSHIFT PAGE_UP  &hml LEFT_SHIFT END    &hmr LEFT_SHIFT LEFT  &hmr LEFT_SHIFT DOWN  &hmr LCTRL UP  &hmr LEFT_ALT RIGHT  &hmr LEFT_GUI BACKSPACE
 &trans  &trans                &trans              &trans                &trans               &trans                 &trans                &trans                &trans         &trans               &trans                   &trans
                                                   &trans                &trans               &trans                 &trans                &trans                &trans
