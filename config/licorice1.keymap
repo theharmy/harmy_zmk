@@ -54,7 +54,7 @@
         boot {
             bindings = <&bootloader>;
             key-positions = <4 5>;
-            layers = <4>;
+            layers = <3>;
         };
 
         colon {
@@ -83,12 +83,6 @@
             layers = <3>;
         };
 
-        Show_l3 {
-            timeout-ms = <100>;
-            bindings = <&kp RA(RC(NUMBER_3))>;
-            key-positions = <31 5>;
-            layers = <4>;
-        };
     };
 
     behaviors {
