@@ -57,6 +57,11 @@
             layers = <4>;
         };
 
+        colon {
+            bindings = <&kp DE_COLON>;
+            key-positions = <6 7>;
+        };
+
         Show_l0 {
             timeout-ms = <100>;
             bindings = <&kp RA(RC(N0))>;
@@ -129,30 +134,20 @@
         QWE {
             display-name = "QWE";
              bindings = <
-           &kp DE_Q     &kp W        &kp E         &kp R         &kp T                      &kp DE_Z         &kp U         &kp I         &kp O        &kp DE_HASH
-           &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                      &kp H            &hmr RSHFT J  &hmr RCTRL K  &hmr LALT L  &hmr RGUI P
-&kp LCTRL  &kp DE_Y     &kp X        &kp C         &kp V         &kp B                      &kp N            &kp M         &kp DE_COMMA  &kp DE_DOT   &kp DE_MINUS  &mt LEFT_SHIFT DE_DOUBLE_QUOTES
-                                     &kp LEFT_ALT  &kp TAB       &mt LEFT_SHIFT DE_SPACE    &lt 3 BACKSPACE  &lt 2 ENTER   &kp DELETE
-            >;
-        };
-
-        Col {
-            display-name = "COL";
-            bindings = <
-        &kp Q       &kp W       &kp F        &kp P        &kp B     &kp J   &kp L        &kp U        &kp Y       &trans
-        &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G     &kp M   &mt RSHFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O
-&trans  &kp Z       &kp X       &kp C        &kp D        &kp V     &kp K   &kp H        &trans       &trans      &trans      &trans
-                                &trans       &trans       &trans    &trans  &trans       &trans
+                  &kp DE_Q     &kp W        &kp E                &kp R         &kp T                      &kp DE_Z         &kp U        &kp I         &kp O       &kp DE_DQT
+                  &hml LGUI A  &hml LALT S  &hml LCTRL D         &hml LSHFT F  &kp G                      &kp H            &kp DE_J     &kp DE_K      &kp DE_L    &kp DE_P
+&mt LCTRL ESCAPE  &kp DE_Y     &kp X        &kp C                &kp V         &kp B                      &kp N            &kp M        &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &kp LEFT_SHIFT
+                                            &mt LEFT_ALT ESCAPE  &kp TAB       &mt LEFT_SHIFT DE_SPACE    &lt 2 BACKSPACE  &lt 1 ENTER  &kp DE_COLON
             >;
         };
 
         NAV {
             display-name = "NAV";
             bindings = <
-        &kp PG_UP     &kp BSPC  &kp UP    &kp DEL    &kp PG_DN    &kp DE_MINUS  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp PLUS
-        &kp HOME      &kp LEFT  &kp DOWN  &kp RIGHT  &kp END      &kp DE_COMMA  &kp N4     &kp N5     &kp N6     &kp DOT
-&trans  &kp DE_CARET  &kp ESC   &kp TAB   &kp RET    &kp LC(Z)    &kp DE_COLON  &kp N1     &kp N2     &kp N3     &kp DE_SEMICOLON  &kp RSHFT
-                                &trans    &trans     &trans       &trans        &trans     &kp DE_N0
+        &kp DE_N1             &kp DE_N2           &kp DE_N3             &kp DE_N4            &kp DE_N5              &kp DE_N6             &kp DE_N7             &kp DE_N8      &kp DE_N9            &kp DE_N0
+        &hml LEFT_GUI DELETE  &hml LEFT_ALT HOME  &hml LCTRL PAGE_DOWN  &hml LSHIFT PAGE_UP  &hml LEFT_SHIFT END    &hmr LEFT_SHIFT LEFT  &hmr LEFT_SHIFT DOWN  &hmr LCTRL UP  &hmr LEFT_ALT RIGHT  &hmr LEFT_GUI BACKSPACE
+&trans  &trans                &trans              &trans                &trans               &trans                 &trans                &trans                &trans         &trans               &trans                   &trans
+                                                  &trans                &trans               &trans                 &trans                &trans                &trans
             >;
         };
 
@@ -161,7 +156,7 @@
             bindings = <
         &kp ESC       &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_TILDE      &kp DE_CARET  &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_RIGHT_BRACKET  &kp DE_GRAVE
         &kp DE_MINUS  &kp DE_ASTERISK      &kp DE_EQUAL       &kp DE_UNDERSCORE        &kp DE_DOLLAR     &kp DE_HASH   &kp LEFT_SHIFT            &kp LCTRL           &kp LEFT_ALT          &kp LEFT_GUI
-&trans  &kp DE_PLUS   &kp DE_PIPE          &kp DE_AT          &kp DE_SLASH             &kp DE_PERCENT    &kp KP_N0     &kp DE_BACKSLASH          &kp DE_AMPS         &kp QMARK             &kp DE_EXCL   &kp RSHFT
+&trans  &kp DE_PLUS   &kp DE_PIPE          &kp DE_AT          &kp DE_SLASH             &kp DE_PERCENT    &kp DE_COLON  &kp DE_BACKSLASH          &kp DE_AMPS         &kp QMARK             &kp DE_EXCL   &trans
                                            &trans             &trans                   &trans            &trans        &trans                    &trans
             >;
         };
@@ -169,10 +164,10 @@
         flayer {
             display-name = "f";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6   &kp F7  &kp F8  &kp F9  &kp F10
+        &trans  &trans  &trans  &trans  &kp F11    &kp F12  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans  &trans   &trans
+                        &trans  &trans  &trans     &trans   &trans  &trans
             >;
         };
 
