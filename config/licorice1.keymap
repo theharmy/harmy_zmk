@@ -17,7 +17,10 @@
     require-prior-idle-ms = <125>;
 };
 
-&lt { quick-tap-ms = <125>; };
+&lt {
+    quick-tap-ms = <200>;
+    tapping-term-ms = <250>;
+};
 
 / {
     // Define a default keymap here.
