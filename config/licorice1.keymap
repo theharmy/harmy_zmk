@@ -125,7 +125,7 @@
 
         QWE {
             display-name = "QWE";
-             bbindings = <
+            bindings = <
                   &kp DE_Q     &kp W        &kp E                &kp R         &kp T                      &kp DE_Z         &kp U        &kp I         &kp O       &kp DE_DQT
                   &hml LGUI A  &hml LALT S  &hml LCTRL D         &hml LSHFT F  &kp G                      &kp H            &kp DE_J     &kp DE_K      &kp DE_L    &kp DE_P
 &mt LCTRL ESCAPE  &kp DE_Y     &kp X        &kp C                &kp V         &kp B                      &kp N            &kp M        &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS  &kp LC(LEFT_SHIFT)
