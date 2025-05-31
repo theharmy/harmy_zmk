@@ -51,8 +51,8 @@
 
         boot {
             bindings = <&bootloader>;
-            key-positions = <4 5>;
-            layers = <3>;
+            key-positions = <4 5 34 35>;
+            require-prior-idle-ms = <500>;
         };
 
         colon {
