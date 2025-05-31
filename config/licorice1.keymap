@@ -56,8 +56,9 @@
 
         boot {
             bindings = <&bootloader>;
-            key-positions = <4 5>;
-            layers = <3>;
+            key-positions = <4 5 34 35>;
+            layers = <0>;
+            require-prior-idle-ms = <500>;
         };
 
         colon {
@@ -117,7 +118,7 @@
             label = "QWE";
         };
 
-        Sym {
+        SYM {
             bindings = <
         &kp DE_CARET  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_LESS_THAN    &kp DE_GT     &kp DE_RIGHT_PARENTHESIS  &kp DE_RIGHT_BRACE  &kp DE_RIGHT_BRACKET  &kp DE_TILDE
         &kp DE_MINUS  &kp DE_ASTERISK      &kp DE_EQUAL       &kp DE_UNDERSCORE        &kp DE_DOLLAR       &kp DE_HASH   &kp LEFT_SHIFT            &kp LCTRL           &kp LEFT_ALT          &kp LEFT_GUI
@@ -139,7 +140,7 @@
             label = "NAV";
         };
 
-        num {
+        NUM {
             bindings = <
         &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &kp N6   &kp N7  &kp N8  &kp N9  &kp N0
         &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp F6   &kp F7  &kp F8  &kp F9  &kp F10
@@ -147,7 +148,7 @@
                         &trans  &trans  &trans     &trans   &trans  &trans
             >;
 
-            label = "f";
+            label = "num";
         };
 
         Mouse {
